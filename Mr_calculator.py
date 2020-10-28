@@ -43,9 +43,6 @@ def calculate_mr(molecule):
     for atom, number in stoich.items():
         name = element(atom)
         mr_total += name.mass * number
-
-    return f'{mr_total:.2f} g/mol'
-
-
-molecule = '(CH3CH2)2O'
-print(calculate_mr(molecule))
+   
+    print(f'{mr_total:.2f} g/mol')
+    return mr_total
